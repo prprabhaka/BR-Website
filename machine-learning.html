@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Machine Learning (Azure &amp; Databricks Computer Vision) | Technologies | BeetleRim Technologies</title>
+	<meta name="author" Content="BeetleRim Technologies Pvt ltd." />
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	
+	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+	<!-- CSS here -->
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/remixicon.css" />
+	<link rel="stylesheet" href="css/swiper.min.css" />
+	<link rel="stylesheet" href="css/animate.min.css" />
+	<link rel="stylesheet" href="css/main.css" />
+
+</head>
+
+<body class="brt-smooth-scroll">
+	<header class="brt-header">
+		<nav class="navbar navbar-expand-lg navbar-light rs-header-inner">
+			<div class="container g-0 brt-container">
+				<div class="rs-header-left">
+					<a class="navbar-brand rs-header-logo-wrapper" href="index.html">
+						<img src="images/beetlerim_logo.svg" class="rs-header-logo" alt="logo">
+					</a>
+					<button class="navbar-toggler rs-header-hamburger" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+				</div>
+				<div class="collapse navbar-collapse rs-header-menu" id="mainMenu">
+					<ul class="navbar-nav mb-2 mb-lg-0 multipage-menu">
+						<li class="nav-item">
+							<a class="nav-link" href="index.html#whatWedo">What We Do</a>
+						</li>
+						<li class="nav-item dropdown has-mega-menu">
+							<a id="industryMenu" class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+								Industry Solutions <i class="ri-arrow-down-s-line"></i>
+							</a>
+							<div class="dropdown-menu mega-menu p-6">
+								<div class="container">
+									<div class="row g-0">
+										<div class="col-md-3">
+											<h3 class="mega-title">Industry Solutions</h3>
+											<p class="mega-desc">Deep domain expertise across industries to solve complex business challenges.</p>
+										</div>
+										<div class="col-md-3">
+											<ul class="list-unstyled mega-links">
+												<li><a href="automotive-crm.html">Automotive</a></li>
+												<li><a href="retails.html">eCommerce &amp; CPG</a></li>
+												<li><a href="property-management.html">Property Management</a></li>
+											</ul>
+										</div>
+										<div class="col-md-3">
+											<ul class="list-unstyled mega-links">
+												<li><a href="healthcare.html">Healthcare</a></li>
+												<li><a href="logistics.html">Logistics</a></li>
+												<li><a href="enterprise-saas.html">Enterprise SaaS</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>								
+							</div>
+						</li>						
+						<li class="nav-item dropdown has-mega-menu">
+							<a id="technologiesMenu" class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+								Technologies <i class="ri-arrow-down-s-line"></i>
+							</a>
+							<div class="dropdown-menu mega-menu p-6">
+								<div class="container">
+									<div class="row g-0">
+										<div class="col-md-3">
+											<h3 class="mega-title">Technologies</h3>
+											<p class="mega-desc">End-to-end technology solutions across Data, AI, cloud, and modern application engineering.</p>
+										</div>
+										<div class="col-md-3">
+											<ul class="list-unstyled mega-links">
+												<li><a href="our-technologies.html" class="mega-link-bold">Overview</a></li>
+												<li><h6 class="mega-link-bold">Data, Analytics &amp; AI</h6>
+													<ul class="submenu-links">
+														<li><a href="data-modelling.html">Data Modelling</a></li>
+														<li><a href="data-engineering.html">Data Engineering</a></li>
+														<li><a href="business-intelligence-visualization.html">Business Intelligence &amp; Visualization</a></li>
+													</ul>
+												</li>
+												<li><h6 class="mega-link-bold">Artificial Intelligence</h6>
+													<ul class="submenu-links">
+														<li><a href="microsoft-copilot.html">Microsoft Copilot</a></li>
+														<li><a href="conversational-ai-chatbots.html">Conversational AI &amp; Chatbots</a></li>
+														<li><a href="agentic-ai.html">Agentic AI Workflows &amp; Design</a></li>
+														<li><a href="machine-learning.html">Machine Learning</a></li>
+													</ul>
+												</li>
+											</ul>
+										</div>
+										<div class="col-md-3">
+											<ul class="list-unstyled mega-links">
+												<li><h6 class="mega-link-bold">Custom Solutions</h6>
+													<ul class="submenu-links">
+														<li><a href="web-applications.html">Web Applications</a></li>
+														<li><a href="generative-ai-applications.html">Generative AI Applications</a></li>
+														<li><a href="mobile-applications.html">Mobile Applications</a></li>
+														<li><a href="xr-applications.html">XR Applications</a></li>
+													</ul>
+												</li>
+												<li><h6 class="mega-link-bold">CRM Management</h6>
+													<ul class="submenu-links">
+														<li><a href="salesforce-implementation.html">Salesforce Consulting</a></li>
+														<li><a href="property-management-solutions.html">Property Management Solutions</a></li>
+														<li><a href="leadprime-crm.html">LeadPrime Application</a></li>
+													</ul>
+												</li>
+											</ul>
+										</div>
+										<div class="col-md-3">
+											<ul class="list-unstyled mega-links">
+												<li><h6 class="mega-link-bold">Innovation</h6>
+													<ul class="submenu-links">
+														<li><a href="internet-of-things.html">Internet of Things (IoT)</a></li>
+														<li><a href="generative-ai.html">Generative AI</a></li>
+														<li><a href="ar-vr-immersive-technologies.html">AR/VR and Immersive Experience</a></li>
+														<li><a href="digital-twin-simulation-models.html">Digital Twins &amp; Simulation Models</a></li>
+														<li><a href="advanced-data-visualisations-3D-interfaces.html">Advanced Data Visualization &amp; 3D Interfaces</a></li>
+														<li><a href="blockchain-for-secure-transactions.html">Blockchain for Secure Transactions</a></li>
+													</ul>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>								
+							</div>
+						</li>						
+						<li class="nav-item dropdown has-mega-menu">
+							<a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+								About Us <i class="ri-arrow-down-s-line"></i>
+							</a>
+							<div class="dropdown-menu mega-menu p-6">
+								<div class="container">
+									<div class="row g-0">
+										<div class="col-md-3">
+											<h3 class="mega-title">About Us</h3>
+											<p class="mega-desc"><b>BeetleRim</b> is a boutique technology consulting firm that focuses on bringing direct ROI through Data and AI.</p>
+										</div>
+										<div class="col-md-3">
+											<ul class="list-unstyled mega-links">
+												<li><a href="who-we-are.html">Who We Are</a></li>
+												<li><a href="our-team.html">Leadership</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>								
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="brt-header-right d-lg-flex">
+					<a class="brt-btn has-theme-deep-blue has-icon has-bg" href="contact-us.html">Get Started</a>
+				</div>
+			</div>
+		</nav>
+	</header>
+    <main class="p-relative">
+		<section class="artificial-intelligence-bg inner-banner">
+			<div class="container">
+                <div class="row g-5">
+					<div class="col-xxl-8 col-xl-8 col-lg-8 col-md-8 col-sm-12">
+                        <div class="breadcrumb-content-wrapper">
+							<div class="breadcrumb-menu">
+                                <nav>
+                                    <ul>
+                                        <li><span><a href="index.html">Home</a></span></li>
+                                        <li><span>Technologies</span></li>
+                                        <li><span>Machine Learning (Azure &amp; Databricks Computer Vision)</span></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="breadcrumb-title-wrapper">
+                                <h1 class="breadcrumb-title">Machine Learning <span>(Azure &amp; Databricks Computer Vision)</span></h1>
+                            </div>                            
+							<div class="breadcrumb-descrip">
+								<p><b>BeetleRim</b> designs and operationalizes enterprise-grade machine learning solutions on <b>Microsoft Azure</b> and <b>Databricks</b>, with deep expertise in computer vision and image intelligence. We help organizations transform images and video into structured, actionable data through scalable, governed ML pipelines built on the Lakehouse architecture.</p>
+							</div>
+                        </div>
+                    </div>					
+				</div>
+			</div>
+		</section>
+		<section class="technologies-area1 section-space-top">            
+            <div class="container">
+				<div class="bg-light-red">
+					<div class="row justify-content-center">
+						<div class="col-xxl-6 col-lg-6 col-md-6 col-12">
+							<div class="rs-section-title-wrapper">
+								<h2 class="rs-section-title rs-split-text-enable split-in-fade mb-4">Build Computer Vision Models on the Lakehouse</h2>
+								<p class="descrip">Unlock insights from visual data by training computer vision models directly on Lakehouse-managed datasets. We design ML workflows that leverage Databricks for distributed data processing and feature engineering, enabling use cases such as object detection, image classification, anomaly detection, and visual quality inspection at scale.</p>
+							</div>
+						</div>
+						<div class="col-xxl-6 col-lg-6 col-md-6 col-12 technologies-area1-img">
+							<img src="images/data-flow.svg" alt="" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="technologies-area2 section-space-bottom">
+            <div class="container">
+				<div class="row justify-content-center">
+					<div class="col-xxl-6 col-lg-6 col-md-6 col-12">
+						<div class="bg-light-gray technologies-area2-img">
+							<img src="images/technologies/artificial-intelligence/machine-learning-img2.png" alt="" />
+						</div>							
+					</div>
+					<div class="col-xxl-6 col-lg-6 col-md-6 col-12">							
+						<div class="rs-section-title-wrapper" style="padding: 84px 36px;">
+							<h2 class="rs-section-title rs-split-text-enable split-in-fade mb-4">Productionize ML with Azure &amp; Databricks MLOps</h2>
+							<p class="descrip">Move beyond notebooks and experiments with production-ready ML systems. We implement end-to-end MLOps pipelines using Azure and Databricks to support model training, versioning, deployment, monitoring, and retraining-ensuring reliability, governance, and continuous performance improvement.</p>
+							<div class="btn-opt2">
+								<a class="brt-btn rs-text-btn has-icon btn-h-grey" href="contact-us.html">Get Started
+									<span class="icon-box">
+										<i class="ri-arrow-right-long-line icon-first"></i>
+										<i class="ri-arrow-right-long-line icon-second"></i>
+									</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>		
+		<section class="services-accordion section-space-bottom">			
+			<div class="container">
+				<div class="row g-5 justify-content-between section-title-space align-items-center">
+                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-5">
+                        <div class="rs-section-title-wrapper">
+                            <h2 class="rs-section-title rs-split-text-enable split-in-fade">Our Machine Learning Services</h2>
+                        </div>
+                    </div>
+					<div class="col-xl-8 col-lg-8 col-md-8 col-sm-7">
+                        <div class="technology-title">
+                            <p class="descrip">Accelerate machine learning initiatives with our Azure and Databricks–aligned ML services. We design, build, and deploy computer vision solutions that integrate seamlessly with enterprise data platforms. From dataset strategy and feature pipelines to model deployment and lifecycle management, we ensure your ML solutions scale with confidence and deliver measurable business value.</p>
+                        </div>
+                    </div>
+                </div>
+				<div class="row services-accordion-row">
+					<div class="col-6">
+						<div class="services-accordion-left">
+							<div class="accordion accordion-flush" id="accordionFlushExample">
+							  <div class="accordion-item" onclick="toggleAccordion(0)">
+								<h2 class="accordion-header">
+								  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="true">
+									Computer Vision Model Development
+								  </button>
+								</h2>
+								<div id="flush-collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionFlushExample">
+								  <div class="accordion-body">
+									<p>Design and train deep learning models for object detection, image classification, instance segmentation, and anomaly detection using modern CNN and transformer-based architectures.</p>
+								  </div>
+								</div>
+							  </div>
+							  <div class="accordion-item" onclick="toggleAccordion(1)">
+								<h2 class="accordion-header">
+								  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false">
+									Lakehouse-Based Feature Engineering &amp; Data Pipelines
+								  </button>
+								</h2>
+								<div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+									<div class="accordion-body">
+										<p>Build scalable feature engineering and image processing pipelines using Databricks and Delta Lake to support batch and near–real-time ML workloads.</p>
+									</div>
+								</div>
+							  </div>
+							  <div class="accordion-item" onclick="toggleAccordion(2)">
+								<h2 class="accordion-header">
+								  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree" data-img="right3">
+									Azure ML &amp; Databricks MLOps Integration
+								  </button>
+								</h2>
+								<div id="flush-collapseThree" class="accordion-pane accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+									<div class="accordion-body">
+										<p>Implement model training, tracking, and deployment workflows using Azure Machine Learning, MLflow, and CI/CD pipelines for repeatable, governed ML operations.</p>
+									</div>
+								</div>
+							  </div>
+							  <div class="accordion-item" onclick="toggleAccordion(3)">
+								<h2 class="accordion-header">
+								  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour" data-img="right4">
+									Model Deployment, Monitoring &amp; Retraining
+								  </button>
+								</h2>
+								<div id="flush-collapseFour" class="accordion-pane accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+									<div class="accordion-body">
+										<p>Deploy models to cloud or edge environments and monitor performance, drift, and data quality-enabling automated retraining and continuous optimization across production systems.</p>
+									</div>
+								</div>
+							  </div>
+							</div>
+						</div>
+					</div>
+					<div class="col-6">
+						<div class="illustration-container relative w-full h-full flex items-center justify-center p-8" id="illustration-box">
+						<img alt="" class="img-fluid absolute max-85 h-auto opacity-100 scale-100 transition-all duration-500" id="img-0" src="images/technologies/artificial-intelligence/machine-learning-tab-img1.png"/>
+						<img alt="" class="img-fluid absolute max-85 h-auto opacity-0 scale-95 transition-all duration-500" id="img-1" src="images/technologies/artificial-intelligence/machine-learning-tab-img2.png"/>
+						<img alt="" class="img-fluid absolute max-85 h-auto opacity-0 scale-95 transition-all duration-500" id="img-2" src="images/technologies/artificial-intelligence/machine-learning-tab-img3.png"/>
+						<img alt="" class="img-fluid absolute max-85 h-auto opacity-0 scale-95 transition-all duration-500" id="img-3" src="images/technologies/artificial-intelligence/machine-learning-tab-img4.png"/>
+					</div>
+					</div>
+				</div>
+			</div>		
+		</section>
+    </main>	
+	<section class="brt-cta-section">
+		<div class="brt-cta-bg"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-xxl-8 col-xl-8 col-lg-8 col-md-8 col-sm-6 cta-lt-col">
+					<h4>LET'S WORK <span>TOGETHER</span></h4>
+					<p>Let's work together to turn your ideas into impactful digital solutions. Partner with us to build, scale, and succeed every step of the way.</p>
+				</div>
+				<div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-6 cta-rt-col">
+					<div class="cta-rt-btn">						
+						<a class="brt-btn rs-text-btn has-icon" href="contact-us.html">Get Started
+							<span class="icon-box">
+								<i class="ri-arrow-right-long-line icon-first"></i>
+								<i class="ri-arrow-right-long-line icon-second"></i>
+							</span>
+						</a>
+					</div>
+					<img class="paperplane-icon wow fadeInRight" data-wow-delay="1s" data-wow-duration=".5s" style="visibility: visible; animation-duration: .5s; animation-delay: 1s; animation-name: fadeInRight;" src="images/paper-plane-icon.png" alt="" />
+				</div>
+			</div>
+		</div>		
+	</section>
+    <footer>
+        <div class="brt-footer-area has-space has-theme-deep-blue has-bg-thumb">
+            <div class="rs-footer-top">
+				<!-- <div class="rs-footer-shape">
+					<img src="images/footer-bg-pattern.png" alt="image">
+				</div> -->
+                <div class="container">
+                    <div class="row g-5">
+						<h6 class="rs-footer-widget-title-main">Let's Connect</h6>				
+							<div class="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-3 col-12">
+								<div class="rs-footer-widget">
+									<div class="rs-footer-widget-content">
+										<div class="rs-footer-widget-links links-opt1">
+											<ul>
+												<li><a href="who-we-are.html">About BeetleRim</a></li>
+												<li><a href="contact-us.html">Contact Us</a></li>
+												<li><a href="contact-us.html">View Locations</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-3 col-12">
+								<div class="rs-footer-widget">
+									<h6 class="rs-footer-widget-title">What We Do</h6>
+									<div class="rs-footer-widget-content">
+										<div class="rs-footer-widget-links">
+											<ul>
+												<li><a class="industryExplore" href="javascript: void(0);">Industry Solutions</a></li>
+												<li><a class="techExplore" href="javascript: void(0);">Technologies</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-3 col-12">
+								<div class="rs-footer-widget">
+									<h6 class="rs-footer-widget-title">Our Thinking</h6>
+									<div class="rs-footer-widget-content">
+										<div class="rs-footer-widget-links">
+											<ul>
+												<li><a href="javascript:void(0);">Overview</a></li>
+												<li><a href="our-team.html">Leadership</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-3 col-12">
+								<div class="rs-footer-widget">
+									<h6 class="rs-footer-widget-title">Locations</h6>
+									<div class="rs-footer-widget-content">
+										<div class="rs-footer-widget-meta">
+											<div class="rs-footer-widget-address">
+												<p class="address-title">New Jersey</p>
+												<p>30 Regent St,<br/>
+												Suite 912,</br/>
+												Jersey City, NJ 07302
+												</p>
+												<p>+1 646-659-8899</p>
+											</div>
+											<div class="rs-footer-widget-address">
+												<p class="address-title">Hyderabad</p>
+												<p>Capital Park Rd,</br>
+												Cyber Hills Colony - VIP Hills,</br/>
+												Madhapur, Hyderabad, TG 500081
+												</p>
+												<p>+91 40 4522 0600</p>
+											</div>                                        
+										</div>
+									</div>
+								</div>
+							</div>
+                    </div>
+					<div class="row">
+						<div class="footer-widget-social">
+							<div class="rs-footer-widget">
+								<h6 class="rs-footer-widget-title mb-0">Follow Us</h6>
+								<div class="rs-footer-widget-content">    
+									<div class="rs-footer-widget-social">							
+										<a href="https://twitter.com/BeetleRim" target="_blank"><i class="ri-twitter-x-line"></i></a>
+										<a href="https://www.linkedin.com/company/beetlerim-technologies" target="_blank"><i class="ri-linkedin-fill"></i></a>
+										<a href="https://sarangapagadala.medium.com/" target="_blank"><i class="ri-medium-fill"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row text-center copyright-txt">
+						<p>© 2026 BeetleRim Technologies. All rights reserved <span>|</span> <a href="privacy-policy.html">Privacy Policy</a></p>
+					</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="backtotop-wrap cursor-pointer">
+        <svg class="backtotop-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"></path>
+        </svg>
+    </div>
+
+    <!-- JS here -->
+    <script defer src="js/jquery-3.7.1.min.js"></script>
+	<script defer src="js/bootstrap.bundle.min.js"></script>
+	<script defer src="js/swiper.min.js"></script>
+	<script defer src="js/wow.min.js"></script>
+	<script defer src="js/rs-scroll-trigger.min.js"></script>
+	<script defer src="js/main.js"></script>
+
+</body>
+</html>
